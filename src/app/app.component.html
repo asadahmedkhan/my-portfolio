@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-secondry" href="assets/Asad_A_Khan_Resume.pdf" download>Download Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick('introduction')">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick('education')">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick('experience')">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick('skills')">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick('contact')">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container section-container" style="margin-top: 70px;" id="introduction">
+  <app-introduction></app-introduction>
+</div>
+<div class="container section-container" id="skills">
+  <h1>Skills</h1>
+  <app-skills></app-skills>
+</div>
+<div class="container section-container" id="experience">
+  <app-experience></app-experience>
+</div>
+<div class="container section-container"  id="education">
+  <app-education></app-education>
+</div>
+<div class="container section-container" id="contact">
+  <app-contact-me></app-contact-me>
+</div>
+
+

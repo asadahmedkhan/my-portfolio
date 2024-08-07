@@ -5,7 +5,7 @@
   }
   
   .profile-img {
-    width: 30vh;
+    width: 15vw;
     height: 35vh;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
@@ -14,6 +14,13 @@
     box-shadow: 1px;
     background-color:#bbafaf;  /* Default background color */
     transition: background-color 0.3s ease;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .profile-img {
+      width: 40vw; /* Adjust the width to make it look better on smaller screens */
+      height: auto; /* Maintain aspect ratio by setting height to auto */
+    }
   }
 
   .profile-img:hover {

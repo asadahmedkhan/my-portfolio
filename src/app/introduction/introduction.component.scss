@@ -5,13 +5,21 @@
   }
   
   .profile-img {
-    width: 150px; /* Adjust the size as needed */
-    height: auto;
-    border-radius: 50%; /* Make the image circular */
+    width: 250px;
+    height: 275px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
     margin-right: 20px; /* Space between the image and the text */
     border: 1px solid;
     box-shadow: 1px;
+    background-color:#bbafaf;  /* Default background color */
+    transition: background-color 0.3s ease;
   }
+
+  .profile-img:hover {
+    background-color: #fefeff; /* Background color on hover */
+  }
+
 .introduction-container p {
     color: #434141; /* Light grey for paragraph and list items */
     font-size: 1.2em; /* Larger font size for better visibility */
